@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: max-content;
+  background-color: black;
+  padding-bottom: 50px;
+  padding: 20px 100px;
+  background-image: url("./images/обложка.jpg");
+  background-size: cover;
+  height: 100%;
+}
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: min-content;
+}
+.role {
+  display: block;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  height: max-content;
+}
+
+#button:active {
+  background-color: aqua;
+  transition: 0.5s;
+}
+.btn {
+  min-width: 150px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: rgba(255, 124, 37, 0.838);
+  transition: 0.3s;
+  border: 0;
+  color: #ffffffeb;
+  border: 1px solid black;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.group-role {
+  display: flex;
+  gap: 20px;
+}
+#input-type {
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.group-btn {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+.card-image {
+  object-fit: contain;
+  height: 600px;
+  transition: 0.5s;
+  border-radius: 15px;
+}

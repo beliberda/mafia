@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mafia.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-top">
+        <div class="how-role">
+          <h2>Участвует:</h2>
+          <p></p>
+        </div>
+        <div class="group-btn">
+          <button class="btn" id="button">Запуск</button>
+          <button class="btn" id="clear">Стереть</button>
+          <button class="btn" id="reload">Перезапустить</button>
+          <div class="group-role">
+            <select name="" id="input-type">
+              <option value="Мирный">Мирный</option>
+              <option value="Мафия">Мафия</option>
+              <option value="Коммисар">Коммисар</option>
+              <option value="Маньяк">Маньяк</option>
+              <option value="Врач">Врач</option>
+              <option value="Красотка">Красотка</option>
+            </select>
+
+            <button class="btn" id="add">Добавить роль</button>
+            <button class="btn" id="delete">Удалить роль</button>
+          </div>
+        </div>
+        <h2 class="role" id="role">ТЫ:</h2>
+      </div>
+      <img id="image" class="card-image disable-card" src="" alt="" />
+    </div>
+  </body>
+  <script src="./mafia.js"></script>
+</html>
