@@ -1,21 +1,38 @@
 massRole = [
 
-
 ]
+
+function HowMany(role, mass) {
+    let count = 0
+    mass.forEach(element => {
+        if (element.title === role) {
+            count++
+        }
+    });
+    return count
+}
+
 let select = document.getElementById('input-type')
 let btnAdd = document.getElementById('add')
 let btnDelete = document.getElementById('delete')
 
-
+let string = `<p>Мирных: ${HowMany('Мирный',massRole)}</p>
+<p>Мафии: ${HowMany('Мирный',massRole)}</p>
+<p>Коммисаров: ${HowMany('Мирный',massRole)}</p>
+<p>Маньяков:${HowMany('Мирный',massRole)}</p>
+<p>Врачей: ${HowMany('Мирный',massRole)}</p>
+<p>Красоток: ${HowMany('Мирный',massRole)}</p>`
 
 console.log(massRole);
+let whoAdd = document.querySelector('.how-role')
+
+
 let btn = document.getElementById('button')
 let reload = document.getElementById('reload')
 let who = document.getElementById('role')
 let clear = document.getElementById('clear')
 let image = document.getElementById('image')
 let i
-
 btnAdd.onclick = ()=>{
     switch (select.value) {
         case 'Мирный':
@@ -58,7 +75,14 @@ btnAdd.onclick = ()=>{
         default:
             break;
     }
-    
+    whoAdd.insertAdjacentHTML('beforeend',
+    `<p>Мирных: ${HowMany('Мирный',massRole)}</p>
+<p>Мафии: ${HowMany('Мирный',massRole)}</p>
+<p>Коммисаров: ${HowMany('Мирный',massRole)}</p>
+<p>Маньяков:${HowMany('Мирный',massRole)}</p>
+<p>Врачей: ${HowMany('Мирный',massRole)}</p>
+<p>Красоток: ${HowMany('Мирный',massRole)}</p>`
+    )
  console.log(massRole);
 }
 
